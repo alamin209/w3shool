@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script> document.createElement("Myhero")</script>
+        <style>
+            Myhero
+            {
+                background-color: red;
+                display: block;
+                padding: 25px;
+                margin: 25px;
+                font-size: 20px ;
+
+            }
+
+
+       </style>
+
+
+    </head>
+
+<body>
+<!--creating color using script-->
+ <Myhero> hello i am new element that you want to create  </Myhero>
+
+        <form>
+        	Color:
+            <input type="date" name="favcol">
+            <input type="submit" name="sub">
+        </form>
+
+
+
+
+<!--<convas id="mycanvas" hight="250px" width="100px" > </convas>-->
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000" ></canvas>
+<script>
+
+var c=document.getElementById("myCanvas");
+var drow=c.getContext("2d");
+//10 and 15 is the postion whre is strtat from left and is also x ,y value and 25 ,20 is also x,y value for x y postion
+drow.moveTo(10,15);
+drow.lineTo(25,20);
+drow.stroke();
+drow.beginPath();
+drow.arc(180,50,18,0,2*Math.PI);//180 and 50 take the positon in x y axis,18 radius
+drow.stroke();
+
+</script>
+
+<!--SVG drowing -->
+
+
+</body>
+</html>
