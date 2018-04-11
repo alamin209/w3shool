@@ -1,0 +1,22 @@
+bookstore {
+    background-color:white;
+    width: 100%;
+}
+
+book
+{
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+}
+
+title {
+    display: block;
+    color: #ff0000;
+    font-size: 20pt;
+}
+year {
+    display: block;
+    color: #0000ff;
+    font-size: 20pt;
+}
