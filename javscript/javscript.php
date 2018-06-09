@@ -61,13 +61,17 @@ function chekingvalue() {
         document.getElementById("demo1").innerHTML=txt;
     }
 </script>
-<!--///propartise example is given below-->
 
+/// missmatch example  using javscript////////////////////////////////////
 
-
-
+<input id="foo" type="number" step=".1" value="4">
 
      <script>
+         var input = document.getElementById('foo');
+         var checkValidity = function () {
+             console.log('is invalid: ' + input.validity.stepMismatch);
+         }
 
-
+         input.onchange = checkValidity;
+         input.onkeyup = checkValidity;
     </script>
